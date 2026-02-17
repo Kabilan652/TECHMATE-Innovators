@@ -51,7 +51,7 @@ const CodePage = () => {
 
         try {
             //  FIX: React fetches from your backend, it doesn't define app.post!
-            const response = await fetch("http://localhost:5000/api/code/execute", {
+            const response = await fetch("https://techmate-innovators-backend.onrender.com/api/code/execute", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
