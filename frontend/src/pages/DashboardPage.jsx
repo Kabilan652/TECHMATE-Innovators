@@ -100,7 +100,7 @@ const DashboardPage = () => {
 
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                         <div>
-                            <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">Welcome back! 👋</h1>
+                            <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">Welcome back!</h1>
                             <p className="text-gray-500 mt-1 font-medium">Here is what's happening with your learning journey today.</p>
                         </div>
                         <button 

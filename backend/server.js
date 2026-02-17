@@ -68,7 +68,7 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 // HEALTH CHECK
 app.get('/', (req, res) => {
-    res.send('🚀 EduDash API is running...');
+    res.send(' EduDash API is running...');
 });
 
 // DASHBOARD ROUTE

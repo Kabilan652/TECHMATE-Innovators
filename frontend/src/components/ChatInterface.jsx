@@ -51,7 +51,7 @@ const ChatInterface = () => {
             console.error("Chat Error:", error);
             setMessages(prev => [...prev, { 
                 role: 'assistant', 
-                content: "⚠️ *Connection error.* I couldn't reach the server. Please try again in a moment." 
+                content: " *Connection error.* I couldn't reach the server. Please try again in a moment." 
             }]);
         } finally {
             setIsLoading(false);

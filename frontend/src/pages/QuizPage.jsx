@@ -140,9 +140,9 @@ const QuizPage = () => {
     return 'bg-red-500';
   };
 
-  // ==========================================
+  
   // RENDER PHASE 1: SETUP SCREEN
-  // ==========================================
+  
   if (appState === 'setup') {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
@@ -188,9 +188,9 @@ const QuizPage = () => {
     );
   }
 
-  // ==========================================
+ 
   // RENDER PHASE 2: GENERATING (LOADING) SCREEN
-  // ==========================================
+
   if (appState === 'generating') {
     return (
       <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-4">
@@ -201,9 +201,9 @@ const QuizPage = () => {
     );
   }
 
-  // ==========================================
+  
   // RENDER PHASE 3: SCORE SCREEN
-  // ==========================================
+
   if (appState === 'finished') {
     const percentage = (score / quizData.length) * 100;
     return (
@@ -244,9 +244,9 @@ const QuizPage = () => {
     );
   }
 
-  // ==========================================
+ 
   // RENDER PHASE 4: QUIZ CARD (PLAYING)
-  // ==========================================
+  
   
   // Safe parsing for AI Answer just in case it returns "A" instead of 0
   let currentCorrectAnswer = quizData[currentQuestion].answer;
@@ -347,7 +347,7 @@ const QuizPage = () => {
                         </div>
                         <div>
                             <p className={`font-extrabold text-base sm:text-lg mb-1 ${selectedOption === -1 ? 'text-orange-800' : isCorrect ? 'text-green-800' : 'text-blue-800'}`}>
-                                {selectedOption === -1 ? "⏱️ Time's Up!" : isCorrect ? 'Spot on! Correct answer.' : 'Incorrect. Let\'s review.'}
+                                {selectedOption === -1 ? "⏱ Time's Up!" : isCorrect ? 'Spot on! Correct answer.' : 'Incorrect. Let\'s review.'}
                             </p>
                             {!isCorrect && (
                                 <p className="text-sm font-semibold text-gray-700 mb-2">

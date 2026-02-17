@@ -43,17 +43,17 @@ const LandingPage = () => {
 
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl">
                     <div className="bg-white p-6 rounded-xl shadow-md">
-                        <div className="text-4xl mb-4">🤖</div>
+                        <div className="text-4xl mb-4"></div>
                         <h3 className="text-xl font-bold mb-2">AI Chat Assistant</h3>
                         <p className="text-gray-600">Get instant answers and explanations for complex technical topics.</p>
                     </div>
                     <div className="bg-white p-6 rounded-xl shadow-md">
-                        <div className="text-4xl mb-4">📝</div>
+                        <div className="text-4xl mb-4"></div>
                         <h3 className="text-xl font-bold mb-2">Smart Notes</h3>
                         <p className="text-gray-600">Generate concise summaries and key points from any text or topic.</p>
                     </div>
                     <div className="bg-white p-6 rounded-xl shadow-md">
-                        <div className="text-4xl mb-4">💻</div>
+                        <div className="text-4xl mb-4"></div>
                         <h3 className="text-xl font-bold mb-2">Code Helper</h3>
                         <p className="text-gray-600">Debug code, get improvements, and understand logic faster.</p>
                     </div>

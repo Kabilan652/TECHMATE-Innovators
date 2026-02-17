@@ -42,7 +42,7 @@ const LoginPage = () => {
 
     if (error) {
       if (error.message === "Email not confirmed") {
-        setError("📧 Please verify your email before logging in.");
+        setError(" Please verify your email before logging in.");
       } else {
         setError(error.message);
       }

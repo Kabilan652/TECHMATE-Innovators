@@ -19,32 +19,32 @@ const Layout = () => {
                     <ul>
                         <li>
                             <Link to="/dashboard" className="block p-4 hover:bg-gray-100 font-semibold text-gray-700">
-                                📊 Dashboard
+                                 Dashboard
                             </Link>
                         </li>
                         <li>
                             <Link to="/chat" className="block p-4 hover:bg-gray-100 font-semibold text-blue-500">
-                                🤖 AI Chat
+                                 AI Chat
                             </Link>
                         </li>
                         <li>
                             <Link to="/notes" className="block p-4 hover:bg-gray-100 font-semibold text-green-500">
-                                📝 Notes
+                                 Notes
                             </Link>
                         </li>
                         <li>
                             <Link to="/quiz" className="block p-4 hover:bg-gray-100 font-semibold text-purple-500">
-                                ❓ Quiz
+                                 Quiz
                             </Link>
                         </li>
                         <li>
                             <Link to="/code" className="block p-4 hover:bg-gray-100 font-semibold text-indigo-500">
-                                💻 Code Helper
+                                 Code Helper
                             </Link>
                         </li>
                         <li>
                             <Link to="/roadmap" className="block p-4 hover:bg-gray-100 font-semibold text-teal-500">
-                                🗺️ Roadmap
+                                 Roadmap
                             </Link>
                         </li>
                     </ul>
@@ -54,7 +54,7 @@ const Layout = () => {
                         onClick={handleLogout}
                         className="w-full text-left p-2 hover:bg-red-50 text-red-600 font-semibold rounded"
                     >
-                        🚪 Logout
+                         Logout
                     </button>
                 </div>
             </aside>

@@ -107,7 +107,7 @@ const CodePage = () => {
             const data = await response.json();
             setExplanationText(data.reply);
         } catch (error) {
-            setExplanationText("⚠️ Could not connect to your AI backend. Ensure port 5000 is running.");
+            setExplanationText(" Could not connect to your AI backend. Ensure port 5000 is running.");
         } finally {
             setIsExplaining(false);
         }
@@ -269,7 +269,7 @@ const CodePage = () => {
 
                     <div className={`font-mono text-sm sm:text-base min-h-[80px] max-h-40 overflow-y-auto custom-scrollbar p-3 rounded bg-gray-900/50 ${isRunning ? 'opacity-50' : ''}`}>
                         {isRunning ? (
-                            <span className="text-yellow-500 animate-pulse">⚙️ Executing on remote server...</span>
+                            <span className="text-yellow-500 animate-pulse"> Executing on remote server...</span>
                         ) : output ? (
                             <pre className={`whitespace-pre-wrap ${isErrorOutput ? 'text-red-400' : 'text-green-400'}`}>
                                 {output}

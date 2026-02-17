@@ -85,7 +85,7 @@ import { useNavigate , Link } from "react-router-dom";
         setIsLoading(false);
       } else {
         // Alert and redirect to login page
-        alert("Account Created Successfully 🎉 Please log in to continue.");
+        alert("Account Created Successfully  Please log in to continue.");
         navigate("/login"); 
       }
     };

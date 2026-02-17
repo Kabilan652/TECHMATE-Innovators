@@ -72,9 +72,9 @@ const RoadmapPage = () => {
     setAppState('setup');
   };
 
-  // ==========================================
+  
   // RENDER PHASE 1: SETUP SCREEN
-  // ==========================================
+  
   if (appState === 'setup') {
     return (
       <div className="h-full bg-gray-50 flex items-center justify-center p-4">
@@ -120,9 +120,9 @@ const RoadmapPage = () => {
     );
   }
 
-  // ==========================================
+  
   // RENDER PHASE 2: GENERATING (LOADING)
-  // ==========================================
+  
   if (appState === 'generating') {
     return (
       <div className="h-full bg-gray-50 flex flex-col items-center justify-center p-4">
@@ -133,9 +133,9 @@ const RoadmapPage = () => {
     );
   }
 
-  // ==========================================
+  
   // RENDER PHASE 3: ROADMAP VIEW
-  // ==========================================
+  
   const totalSteps = roadmapData.length;
   const completedSteps = roadmapData.filter(i => i.status === 'completed').length;
   const progressPercent = (completedSteps / totalSteps) * 100;
